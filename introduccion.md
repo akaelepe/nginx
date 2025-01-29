@@ -1,4 +1,4 @@
-## INTRODUCCIÓN  
+<h1 align="center"> INTRODUCCIÓN </h1>
 <br>
 <br>
 
