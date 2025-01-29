@@ -114,3 +114,57 @@ La web1 puede acceder desde la red externa y la red interna, pero la web2 solo d
 
 ![comprobación red externa](./img/comprobacion-externa.png)  
 <br>
+
+### G) AUTENTICACIÓN, AUTORIZACIÓN Y CONTROL DE ACCESO  
+<br>
+Web1.org contiene un directorio privado al que sólo pueden acceder usuarios válidos.  
+<br>
+
+*__Volver a modificar el sites available__*  
+<br>
+
+![sites available 3](./img/sites-available3.png)  
+<br>
+
+*__Comprobación de que web1.org/privado requiere acceso__*  
+<br>
+
+![web1 privado](./img/web1-privado.png)  
+<br>
+
+*__Comprobación de que tengo acceso__*  
+<br>
+
+![acceso privado](./img/acceso-privado.png)  
+<br>  
+
+### H) AUTENTICACIÓN, AUTORIZACIÓN Y CONTROL DE ACCESO  
+
+La web1 contiene un directorio llamado privado. Desde la red externa pide autorización y desde la red interna NO.  
+
+*__Volver a modificar el sites-available__*  
+<br>
+
+![sites available 4](./img/sites-available4.png)  
+<br>
+
+
+### I) SEGURIDAD  
+<br>
+Configurar el sitio de web1 para que el acceso sea seguro. Para ello hay que crear una key privada:  
+
+<br>
+
+> openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/selfigned.key -out /etc/ssl/certs/selfsigned.crt
+<br>
+
+![key privada](./img/key-private.png)  
+<br>
+
+*__Por último volver a modificar el archivo sites-available__*  
+<br>
+
+![sites available final](./img/key-sitesavailable.png)  
+<br>
+
+
