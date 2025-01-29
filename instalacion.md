@@ -16,6 +16,8 @@ En mi caso he elegido el SO Ubuntu 22.04 para realizar esta práctica.
 
 <br>
 
-*__Verificación del servicio__*
+*__Verificación del servicio__*  
 
-![Nginx status](./img/ngix_status.png)  
+![nginx status](./img/nginx_status.png)
+
+
