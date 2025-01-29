@@ -2,6 +2,8 @@
 <BR>
 <BR>
 A continuación muestro las páginas que me han ayudado a la hora de elaborar este repositorio de guía/instalación del servicio nginx:  
+<BR>
+<BR>
 
 - [NGINX](https://nginx.org/en/linux_packages.html#Debian)
 - [HOSTINET](https://www.hostinet.com/formacion/vps-servidores/nginx-que-es-y-como-funciona/)  
