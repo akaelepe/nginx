@@ -49,3 +49,68 @@ Para modificar la página predeterminada de Nginx hay que modificar el archivo *
 
 ![página predeterminada nginx](./img/index-nginx.png)  
 <br>
+
+### E) VIRTUAL HOSTING  
+El servidor poseerá dos sitios webs. Para ello hay que seguir los siguientes pasos:
+<br>
+
+*__Creación de los directorios__*
+<br>
+
+![mkdir de los directorios](./img/mkdir-web.png)
+<br>
+
+*__Concesión de permisos para los directorios__*  
+![permisos a los directorios](./img/permisos-directorios.png)  
+<br>
+
+*__Creación de los index.html para sitio web__*
+<br>
+
+![index.html de las dos webs](./img/index-webs.png)  
+<br>
+
+*__Creación de los sites-available para cada sitio__*
+<br>
+
+![sites available](./img/sites-available.png)  
+<br>
+
+*__Configuración del archivo hosts para las webs__*
+<br>
+
+![archivo hosts](./img/hosts.png)  
+<br>
+
+*__Resultado final__*  
+<br>
+
+![resultado final](./img/resultado_final.png)  
+<br>
+
+### F) AUTENTICACIÓN, AUTORIZACIÓN Y CONTROL DE ACCESO  
+La web1 puede acceder desde la red externa y la red interna, pero la web2 solo desde la interal. Para conseguir esto necesitamos hacer:  
+<br>
+*__Modificar los sites-available de cada uno__*  
+<br>
+
+![sites available 2](./img/sites-available2.png)  
+<br>
+
+*__Modificar el archivo hosts con las ips que permitimos tanto para red externa como interna__*  
+<br>
+
+![hosts modificado](./img/hosts2.png)  
+<br>
+
+*__Comprobacion de la red interna usando curl__*  
+<br>
+
+![comprobacion interna](./img/comprobacion-interna.png)  
+<br>
+
+*__Comprobación de la red externa__*  
+<br>
+
+![comprobación red externa](./img/comprobacion-externa.png)  
+<br>
